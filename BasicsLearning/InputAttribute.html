@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form</title>
+</head>
+<body>
+    <h1>HTML Registration Form</h1>
+    <form action="#">
+        <!-- The input size attribute specifies the visible width, in characters of an input -->
+        <!-- The input maxlength attribute specifies the maximum number of characters allowed in an input field -->
+        <!-- The input minlength attribute specifies the minimum number of characters allowed in an input field -->
+        <!-- required attribute will make sure that user will not leave the form field empty -->
+        <!-- autofocus is an attribute that will make the form field bold when it is clicked -->
+        <!-- autocomplete will make sure that in form fields like passwords, emailId and contact number will not be autocomplted while filling the form from the previous data entered in the form that is stored in the local browser memory -->
+
+        <label for="username">Enter Your Name</label>
+        <input type="text" id="username" placeholder="username" value="" size="20" required  autofocus autocomplete="off"/>
+        <br>
+        <label for="date1">Enter a date before 1980-01-01:</label>
+        <input type="date"  id="date1" name="dateMax" max="1979-12-31">
+        <br>
+        <label for="date2">Enter a date after 2000-01-01</label>
+        <input type="date" id="date2" name="datemin" min="2000-01-01" max="2023-06-13">
+        <br>
+        <label>Quantity(between 1 and 5)</label>
+        <input type="number" name="quantity" id="quantity" min="1" max="5"><br>
+        <label for="files">Select Files :</label>
+        <!-- the multiple attribute specifies that the user can select multiple options for the input -->
+        <input type="file" id="files" name="files" multiple>
+        <br><br>
+        <label for="browser">Drop down list</label>
+        <input list="browser" name="browser">
+        <datalist id="browser">
+            <option value="Internet Explorer" >
+            <option value="Chrome" >
+            <option value="FireFox" >
+            <option value="Opera" >
+            <option value="Safari" >
+        </datalist>
+
+    </form>
+    
+</body>
+</html>

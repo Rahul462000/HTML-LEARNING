@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <p>The &lt;form&gt; tag is used to create an <b>HTML</b> from for user input</p>
+    <h2>HTML Form</h2>
+    <hr>
+    <form action="#">
+        <p>here &lt;label&gt; is sued generally for reading the input field name it is generally used for blind people</p>
+        <label for="username">FirstName</label>
+        <input type="text" id="username" />
+        <!-- types of input types -->
+        <label for="">input field types</label>
+        <input type="password" name="" id="" placeholder="password here" />
+        <input type="email" name="" id="" placeholder="Email here"/>
+        <input type="number" name="" id="" placeholder="Contact Number" maxlength="10" />
+        <input type="color" name="" id="" placeholder="Colors here" />
+        <input type="date" name="" id="" />
+        <br>
+        <br>
+        <!-- The <select> element defines a drop downlist: -->
+            <label for="cars">Choose a car:</label>
+            <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="BMW">BMW</option>
+                <option value="Bugati">Bugati</option>
+                <option value="Audi">Audi</option>
+            </select>
+            <mark>  In Select dropdown list and datalist dropdown list if user must enter one of your choices, use select element if user can enter whatever it want will choose datalist dropdown option</mark>
+            <br><br>
+            <p>TextArea</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <p>button</p>
+            <button onclick="alert('btn is clicked👌')">Click Me</button>
+
+            <p>A fieldset</p>
+            <fieldset>
+                <legend>Portfolio</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" value="john"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" value="doe"><br><br>
+                <input type="submit" value="submit">
+            </fieldset>
+    </form>
+</body>
+</html>
